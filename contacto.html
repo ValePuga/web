@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8' />
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/pruebas.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="icon" href="image/perfil_thumbnail.jpg" type="image/x-icon">
+    <script type="text/javascript" ></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='autobiografia.html'>Quién soy</a></li>
+                <li><a href='galeria.html'>Galería</a></li>
+                <li><a href='contacto.html'>Contacto</a></li>
+            </ul>
+		</nav>
+	</header>
+    
+
+	<section class="principal">	
+        
+		<h2>Contacto</h2>
+		
+		<p>Ponte en contacto conmigo</p>
+		
+        <form action="" method="post">
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="nombre">
+            <input type="submit" value="Save">
+
+            <!--Cajas de texto-->
+            <fieldset>
+                <legend>Nombre</legend>
+                Nombre: <input name="nombre" type="text">
+                Apellidos: <input name="apellidos" type="text">
+            </fieldset>
+
+            <!--Radio botones-->
+            <fieldset>
+                <legend>Género</legend>
+                    <input type="radio" name="radio1" id="radio"> Masculino
+                    <input type="radio" name="radio1" id="radio"> Femenino
+                    <input type="radio" name="radio1" id="radio"> Otro
+                    <input type="radio" name="radio1" id="radio"> Prefiero no decir
+            </fieldset>
+
+            <!--Checkbox-->
+            <fieldset>
+                <legend>Estudios Actuales</legend>
+                <select name="select">
+                <option value="value0">...</option>
+                <option value="value1">Secundaria</option>
+                <option value="value2">Bachillerato</option>
+                <option value="value3">Licenciatura</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <fieldset >
+            <legend>Tipo de contacto</legend>
+            <select>
+            <option value="_" selected disabled>...</option>
+            <option value="Compra">Compra</option>
+            <option value="Collab">Collab</option>
+            <option value="Novedades">Novedades</option>
+            <option value="Otro">Otro</option>
+            </select>
+        </fieldset>
+	</section>
+
+<aside>
+    <section>
+        <h3>Social media</h3>
+        <p>¿Deseas comentar más detalles? Puedes visitar las siguientes redes sociales:</p>
+        <div style="justify-content: center;">
+            <a href="https://www.facebook.com/valeria.dirnt.9" target="_blank">
+            <img width="20%" src="image\facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/airelavpuga/" target="_blank">
+                <img width="20%" src="image\instagram.png" alt="Instagram">
+                </a>
+            <a href="mailto:valeriapuga789.09@gmail.com" target="_blank">
+                <img width="20%" src="image\gmail.png" alt="Gmail">
+            </a> 
+        </div>   
+    </section>
+
+    <section>
+        <h3>Gran parte de mis días los paso aquí.</h3>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1948.3893497811805!2d-88.14274598981628!3d21.16010323057448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f522b6c741fe2ff%3A0x1a4273ac58448ae1!2sUADY%20-%20Unidad%20Multidisciplinaria%20Tizim%C3%ADn!5e0!3m2!1ses-419!2smx!4v1724640345867!5m2!1ses-419!2smx" width=95% height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>¿Quieres verme personalmente?</p>
+    <script>
+        var hoy = new Date();
+            var diasSemana = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+            var mesesAño = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+            var diaSemana = diasSemana[hoy.getDay()];
+            var diaMes = hoy.getDate();
+            var mes = mesesAño [hoy.getMonth()]; 
+            var año = hoy.getFullYear();
+
+            var horas = hoy.getHours();
+            var minutos = hoy.getMinutes();
+         
+            document.write("Hoy es " + diaSemana + " " + diaMes + " de " + mes + " de " + año );
+            document.write("<br> Son las " + horas + ":" + minutos + " horas");
+    </script>
+
+    <table class="horario">
+		<caption>checa mi horario y <i>puede</i> que esté ahí</caption> 
+		<thead>
+			<tr>
+				<th></th>
+				<th>Lun</th>
+				<th>Mar</th>
+				<th>Mié</th>
+				<th>Jue</th>
+			</tr>
+
+		</thead>
+
+		<tbody>
+			<tr>
+				<td class="horas">7:00 a 9:15 </td>
+				<td class="bd">Bases de Datos<span><br>CC1</span></td>
+				<td class="cs">Construcción de Software<span><br>CC1</span> </td>
+                <td class="cs">Construcción de Software<span><br>CC1</span> </td>
+				<td class="arq">Arquitectura de Software<span><br>Aula18</span> </td>
+			</tr>
+			<tr>
+				<td class="horas">9:30 a 11:45 </td>
+				<td class="desarrollo">Desarrollo de Aplicaciones Web<span><br>CC1</span></td>
+                <td class="arq">Arquitectura de Software<span><br>Aula18</span> </td>
+                <td class="estadistica">Inferencia Estadística<span><br>CC1</span></td>
+			</tr>
+			<tr>
+				<td class="horas">11:45 a 14:00 </td>
+				<td class="estadistica">Inferencia Estadística<span><br>CC1</span></td>
+                <td class="desarrollo">Desarrollo de Aplicaciones Web<span><br>CC1</span></td>
+                <td class="bd">Bases de Datos<span><br>CC2</span></td>
+			</tr>
+		</tbody>
+	</table>
+    </section>
+</aside>
+
+	<footer>
+		Tizimín, Yucatán, Octubre, 2024.
+	</footer>
+</body>
+</html>

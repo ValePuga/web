@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8' />
+	<title>Galería</title>
+	<link rel="stylesheet" type="text/css" href="css/pruebas.css">
+	<link rel="icon" href="image/perfil_thumbnail.jpg" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href='index.html'>Inicio</a></li>
+				<li><a href='autobiografia.html'>Quién soy</a></li>
+              	<li><a href='galeria.html'>Galería</a></li>
+				<li><a href='contacto.html'>Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="principal">	
+		<table>
+			<thead style="font-size: x-large;">
+				<tr>
+					<th>Nombre</th>
+					<th>---Información---</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!--DELL fish-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/K8GJ3Mv.jpg"/> </td>
+					<td>
+					Nombre: DELL fish
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: bolígrafo sobre papel
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: 12x17cm
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: febrero 2023
+					</td>
+				</tr>
+				<!--Espejos B-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/4pUr6qJ.jpg"/> </td>
+					<td>
+					Nombre: Espejos B
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: Acrílico sobre lienzo
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: 80x60cm
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: septiembre 2022
+					</td>
+				</tr>
+				<!--maya-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/KTVCWd5.jpg"/> </td>
+					<td>
+					Nombre: "Vale Puga" en jeroglífico maya
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: pintura acrílica sobre plastilina
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: 17x28cm
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: marzo 2023
+					</td>
+				</tr>
+				<!--ojo-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/lTNbOL2.jpg"/> </td>
+					<td>
+					Nombre: OJO (colección SUEÑOS)
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: digital
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: sin definir
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: noviembre 2021
+					</td>
+				</tr>
+				<!--captain america coffee-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/RdPZvKB.jpg"/> </td>
+					<td>
+					Nombre: Take a Break! Captain America
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: digital
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: sin definir
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: septiembre 2021
+					</td>
+				</tr>
+				<!--blue pez-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/AIO7SCq.jpg" /> </td>
+					<td>
+					Nombre: BLUE QUEUE
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: mixta sobre papel (bolígrafo, tinta, lápiz de madera)
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: 12x17cm
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: julio 2024
+					</td>
+				</tr>
+				<!--OP cats-->
+				<tr>
+					<td rowspan="4"><img width="200" src="https://imgur.com/Efazzys.jpg"/> </td>
+					<td>
+					Nombre: Michitos OP
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Técnica: pintura acrílica sobre madera
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Tamaño: 10x15cm
+					</td>
+				</tr>
+				<tr>
+					<td>
+					Fecha: septiembre 2023
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+			<td>Carrete disponible próximamente</td>
+			</tr>
+			</tfoot>
+			</table>
+	</section>
+    
+	<aside>
+
+		<!--Convertidor-->
+		<div>
+		<script>
+			const Cambio = 19;
+
+			function Pesos() {
+				const USD = document.getElementById("usd").value;  
+
+				const MXN = (USD * Cambio).toFixed(2);  
+					document.getElementById("resultado").textContent = `${USD} USD son ${MXN} MXN.`;
+				
+			}
+
+			function limpiarConvertidor() {
+				document.getElementById("usd").value = "";
+				document.getElementById("resultado").textContent = ""; 
+			}
+
+		</script>
+		<section id="convertidor"></section>
+				<p>Algunos precios pueden estar en dólares</p>
+            <h2>Convertidor</h2>
+            <label for="usd">Precio en USD:</label>
+            <input type="number" id="usd" placeholder="dollar">
+            <button onclick="Pesos()">Convertir</button>
+            <button onclick="limpiarConvertidor()">Limpiar</button>
+            <p id="resultado"></p>
+			<br>
+			<br>
+			<br>
+			<br>
+        </section>
+		</div> <!--fin convertidor-->
+		<!--Calculadora-->
+		<div>
+			<script>
+			function calcular(operacion) {
+					const num1 = parseFloat(document.getElementById('num1').value);
+					const num2 = parseFloat(document.getElementById('num2').value);
+					let resultado;
+
+					if (isNaN(num1) || isNaN(num2)) {
+						document.getElementById('resultado-calculadora').innerText = "Por favor ingresa números válidos.";
+						return;
+					}
+
+					switch (operacion) {
+						case 'suma':
+							resultado = num1 + num2;
+							break;
+						case 'resta':
+							resultado = num1 - num2;
+							break;
+						case 'multiplicacion':
+							resultado = num1 * num2;
+							break;
+						case 'division':
+							if (num2 === 0) {
+								document.getElementById('resultado-calculadora').innerText = "No se puede dividir entre cero.";
+								return;
+							}
+							resultado = num1 / num2;
+							break;
+					}
+
+					document.getElementById('resultado-calculadora').innerText = `Resultado: ${resultado}`;
+				}
+
+				function limpiar() {
+					document.getElementById('num1').value = '';
+					document.getElementById('num2').value = '';
+					document.getElementById('resultado-calculadora').innerText = '';
+				}
+			</script>
+			<section id="calculadora">
+				
+				<h2>Calculadora de precios</h2>
+				<input type="number" id="num1" placeholder="Número 1">
+				<input type="number" id="num2" placeholder="Número 2">
+				<button onclick="calcular('suma')">Sumar</button>
+				<button onclick="calcular('resta')">Restar</button>
+				<button onclick="calcular('multiplicacion')">Multiplicar</button>
+				<button onclick="calcular('division')">Dividir</button>
+				<button onclick="limpiar()">Limpiar</button>
+				<p id="resultado-calculadora"></p>
+			</section>
+		</div> <!--fin calculadora-->
+	</aside>
+
+
+	<footer>
+		Tizimín, Yucatán, Octubre, 2024.
+	</footer>
+</body>
+</html>
